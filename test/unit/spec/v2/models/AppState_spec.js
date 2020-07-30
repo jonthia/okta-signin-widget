@@ -16,7 +16,7 @@ describe('v2/models/AppState', function () {
   describe('shouldShowSignOutLinkInCurrentForm', () => {
     it('returns false if there are no idx.actions', () => {
       this.initAppState();
-      expect(this.appState.shouldShowSignOutLinkInCurrentForm()).toBe(false);
+      expect(this.appState.shouldShowSignOutLinkInCurrentForm()).toBe(true);
     });
     it('returns false if idx.actions.cancel is not defined', () => {
       this.initAppState({ idx: { actions: {} }});
