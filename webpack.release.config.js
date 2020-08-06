@@ -23,12 +23,6 @@ var usePolyfill = require('./buildtools/webpack/polyfill');
 var entryConfig = config('okta-sign-in.entry.js');
 entryConfig.output.filename = 'okta-sign-in.entry.js';
 entryConfig.externals = {
-  'handlebars': {
-    'commonjs': 'handlebars/dist/handlebars',
-    'commonjs2': 'handlebars/dist/handlebars',
-    'amd': 'handlebars',
-    'root': 'handlebars'
-  },
   'q': true,
   'u2f-api-polyfill': true,
   'underscore': true
